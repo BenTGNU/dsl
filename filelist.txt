@@ -1,0 +1,7 @@
+.:
+filelist.txt
+dsl.menu
+dslmain.menu
+dsl.png
+linux24
+minirt24.gz

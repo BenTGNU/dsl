@@ -11,7 +11,7 @@ ENDTEXT
 LABEL DSLTEXTMODE
 MENU LABEL ^DSL Text Mode
 KERNEL er/plugins/dsl/linux24
-INITRD er/plugins/dsl/minirt24
+INITRD er/plugins/dsl/minirt24.gz
 APPEND ramdisk_size=100000 init=/etc/init lang=us apm=power-off vga=normal nomce noapic BOOT_IMAGE=knoppix
 TEXT HELP
                  DSL - Damn Small Linux.
@@ -21,7 +21,7 @@ ENDTEXT
 LABEL DSLEXPERTMODE
 MENU LABEL ^DSL Expert Mode
 KERNEL er/plugins/dsl/linux24
-INITRD er/plugins/dsl/minirt24
+INITRD er/plugins/dsl/minirt24.gz
 APPEND ramdisk_size=100000 init=/etc/init lang=us apm=power-off vga=791 nomce BOOT_IMAGE=expert
 TEXT HELP
                  DSL - Damn Small Linux.
@@ -31,7 +31,7 @@ ENDTEXT
 LABEL DSL1280X1024
 MENU LABEL ^DSL 1280x1024
 KERNEL er/plugins/dsl/linux24
-INITRD er/plugins/dsl/minirt24
+INITRD er/plugins/dsl/minirt24.gz
 APPEND ramdisk_size=100000 init=/etc/init lang=us apm=power-off vga=794 xmodule=fbdev nomce noapic BOOT_IMAGE=knoppix
 TEXT HELP
                  DSL - Damn Small Linux.
@@ -41,7 +41,8 @@ ENDTEXT
 LABEL DSL1024X768
 MENU LABEL ^DSL 1024x768
 KERNEL er/plugins/dsl/linux24
-APPEND ramdisk_size=100000 init=/etc/init lang=us apm=power-off vga=791 xmodule=fbdev INITRD er/plugins/dsl/minirt24 nomce noapic quiet BOOT_IMAGE=knoppix
+INITRD er/plugins/dsl/minirt24.gz
+APPEND ramdisk_size=100000 init=/etc/init lang=us apm=power-off vga=791 xmodule=fbdev nomce noapic quiet BOOT_IMAGE=knoppix
 TEXT HELP
                  DSL - Damn Small Linux.
                  Boot x86 With GUI 1024x768.
@@ -50,7 +51,7 @@ ENDTEXT
 LABEL DSL800X600
 MENU LABEL ^DSL 800x600
 KERNEL er/plugins/dsl/linux24
-INITRD er/plugins/dsl/minirt24
+INITRD er/plugins/dsl/minirt24.gz
 APPEND ramdisk_size=100000 init=/etc/init lang=us apm=power-off vga=788 xmodule=fbdev nomce noapic quiet BOOT_IMAGE=knoppix
 TEXT HELP
                  DSL - Damn Small Linux.
@@ -60,7 +61,7 @@ ENDTEXT
 LABEL DSLLOWRAM
 MENU LABEL ^DSL Low RAM
 KERNEL er/plugins/dsl/linux24
-INITRD er/plugins/dsl/minirt24
+INITRD er/plugins/dsl/minirt24.gz
 APPEND ramdisk_size=100000 init=/etc/init lang=us apm=power-off vga=normal noscsi noideraid nosound nousb nofirewire noicons minimal nomce noapic noapm quiet BOOT_IMAGE=knoppix
 TEXT HELP
                  DSL - Damn Small Linux.
@@ -70,7 +71,7 @@ ENDTEXT
 LABEL DSLINSTALL
 MENU LABEL ^DSL Install
 KERNEL er/plugins/dsl/linux24
-INITRD er/plugins/dsl/minirt24
+INITRD er/plugins/dsl/minirt24.gz
 APPEND ramdisk_size=100000 init=/etc/init lang=us apm=power-off vga=normal noscsi noideraid nosound nofirewire legacy base norestore _install_ nomce noapic noapm quiet BOOT_IMAGE=knoppix
 TEXT HELP
                  DSL - Damn Small Linux.
@@ -80,7 +81,7 @@ ENDTEXT
 LABEL DSLFAILSAFEMODE
 MENU LABEL ^DSL FailSafe Mode
 KERNEL er/plugins/dsl/linux24
-INITRD er/plugins/dsl/minirt24
+INITRD er/plugins/dsl/minirt24.gz
 APPEND ramdisk_size=100000 init=/etc/init lang=us vga=normal atapicd nosound noscsi nousb nopcmcia nofirewire noagp nomce nodhcp xmodule=vesa BOOT_IMAGE=knoppix
 TEXT HELP
                  DSL - Damn Small Linux.
